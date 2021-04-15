@@ -102,9 +102,9 @@ class FirstViewController: UIViewController,
   }
 
   @IBAction func touchColor(_ sender: Any) {
-    if viewModel.hairColorFilter != nil {
+    if viewModel.eyeColorFilter != nil {
       colorFilterButton.tintColor = .gray
-      viewModel.hairColorFilter = nil
+      viewModel.eyeColorFilter = nil
       viewModel.filterCharacters()
     } else {
       colorFilterButton.tintColor = .blue
@@ -177,7 +177,7 @@ extension FirstViewController: UIPickerViewDelegate, UIPickerViewDataSource {
       amount = viewModel.genders.count
     }
     if pickerView == colorPicker {
-      amount = viewModel.hairColors.count
+      amount = viewModel.eyeColors.count
     }
     if pickerView == filmPicker {
       amount = viewModel.films.count
@@ -192,7 +192,7 @@ extension FirstViewController: UIPickerViewDelegate, UIPickerViewDataSource {
       viewModel.genderFilter = viewModel.genders[row]
     }
     if pickerView == colorPicker {
-      viewModel.hairColorFilter = viewModel.hairColors[row]
+      viewModel.eyeColorFilter = viewModel.eyeColors[row]
     }
     if pickerView == filmPicker {
       viewModel.filmFilter = viewModel.films[row]
@@ -209,7 +209,7 @@ extension FirstViewController: UIPickerViewDelegate, UIPickerViewDataSource {
       contentString = viewModel.genders[row]
     }
     if pickerView == colorPicker {
-      contentString = viewModel.hairColors[row]
+      contentString = viewModel.eyeColors[row]
     }
     if pickerView == filmPicker {
       contentString = viewModel.films[row].title

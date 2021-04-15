@@ -34,10 +34,10 @@ class FirstViewModel {
     var characters: [SWCharacter] = []
     var filteredCharacters: [SWCharacter] = []
     var genders: [String] = ["male", "female", "unkown", "n/a"]
-    var hairColors: [String] = []
+    var eyeColors: [String] = []
     var filmFilter: Film?
     var genderFilter: String?
-    var hairColorFilter: String?
+    var eyeColorFilter: String?
     var currentPage = 1
 
     func getAllFilms() {
@@ -63,8 +63,8 @@ class FirstViewModel {
             SWServices.getAllCharacters(page: currentPage) { [weak self] characters in
                 guard let self = self else { return }
                 characters.forEach { (character) in
-                    if !self.hairColors.contains(character.hairColor) {
-                        self.hairColors.append(character.hairColor)
+                    if !self.eyeColors.contains(character.eyeColor) {
+                        self.eyeColors.append(character.eyeColor)
                     }
                 }
                 self.characters.append(contentsOf: characters)
@@ -83,7 +83,7 @@ class FirstViewModel {
         if let genderFilter = genderFilter, genderFilter != character.gender {
             return false
         }
-        if let hairColorFilter = hairColorFilter, hairColorFilter != character.hairColor {
+        if let eyeColorFilter = eyeColorFilter, eyeColorFilter != character.eyeColor {
             return false
         }
         if let filmFilter = filmFilter, !character.filmsId.contains(filmFilter.id) {
