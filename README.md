@@ -1,7 +1,7 @@
-[![Build Status](https://img.shields.io/travis/rootstrap/ios-base/master.svg)](https://travis-ci.org/rootstrap/ios-base)
-[![Maintainability](https://api.codeclimate.com/v1/badges/21b076c80057210cda75/maintainability)](https://codeclimate.com/github/rootstrap/ios-base/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/21b076c80057210cda75/test_coverage)](https://codeclimate.com/github/rootstrap/ios-base/test_coverage)
-[![License](https://img.shields.io/github/license/rootstrap/ios-base.svg)](https://github.com/rootstrap/ios-base/blob/master/LICENSE.md)
+[![Build Status](https://img.shields.io/travis/rootstrap/MavenTest/master.svg)](https://travis-ci.org/rootstrap/MavenTest)
+[![Maintainability](https://api.codeclimate.com/v1/badges/21b076c80057210cda75/maintainability)](https://codeclimate.com/github/rootstrap/MavenTest/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/21b076c80057210cda75/test_coverage)](https://codeclimate.com/github/rootstrap/MavenTest/test_coverage)
+[![License](https://img.shields.io/github/license/rootstrap/MavenTest.svg)](https://github.com/rootstrap/MavenTest/blob/master/LICENSE.md)
 
 # iOS Base Template
 **iOS base** is a boilerplate project created by Rootstrap for new projects using Swift 5. The main objective is helping any new projects jump start into feature development by providing a handful of functionalities.
@@ -20,9 +20,9 @@ This template comes with:
 #### Extensions
  This App Template also contains other branches with specific features that may be of use to you:
 
-- [**feature/mvvm+rxswift**](https://github.com/rootstrap/ios-base/tree/feature/mvvm%2Brxswift) in case you want to work with **RxSwift** and **MVVM**.
-- [**feature/jenkins**](https://github.com/rootstrap/ios-base/tree/feature/jenkins) to integrate build and release with **Jenkins**.
-- [**feature/moya_integration**](https://github.com/rootstrap/ios-base/tree/feature/moya_integration) manage routes and HTTP resources with Moya and Alamofire.
+- [**feature/mvvm+rxswift**](https://github.com/rootstrap/MavenTest/tree/feature/mvvm%2Brxswift) in case you want to work with **RxSwift** and **MVVM**.
+- [**feature/jenkins**](https://github.com/rootstrap/MavenTest/tree/feature/jenkins) to integrate build and release with **Jenkins**.
+- [**feature/moya_integration**](https://github.com/rootstrap/MavenTest/tree/feature/moya_integration) manage routes and HTTP resources with Moya and Alamofire.
 
 
 To use them simply download the branch and locally rebase against master/develop from your initial **iOS base** clone.
@@ -184,6 +184,6 @@ iOS-Base is available under the MIT license. See the LICENSE file for more info.
 
 ## Credits
 
-**iOS Base** is maintained by [Rootstrap](http://www.rootstrap.com) with the help of our [contributors](https://github.com/rootstrap/ios-base/contributors).
+**iOS Base** is maintained by [Rootstrap](http://www.rootstrap.com) with the help of our [contributors](https://github.com/rootstrap/MavenTest/contributors).
 
 [<img src="https://s3-us-west-1.amazonaws.com/rootstrap.com/img/rs.png" width="100"/>](http://www.rootstrap.com)

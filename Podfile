@@ -2,7 +2,7 @@ platform :ios, '11.4'
 use_frameworks!
 inhibit_all_warnings!
 
-target 'ios-base' do
+target 'MavenTest' do
   pod 'Alamofire', '~> 5.2.0'
   pod 'IQKeyboardManagerSwift', '~> 6.1.1'
   pod 'RSFontSizes', '~> 1.0.2'
@@ -10,6 +10,8 @@ target 'ios-base' do
   pod 'Fabric', '~> 1.9.0'
   pod 'Crashlytics', '~> 3.12.0'
   pod 'R.swift', '~> 5.0.3'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'SkeletonView'
 
   # Uncomment if needed ---
   # pod 'PagedLists', '~> 1.0.0'
@@ -22,7 +24,7 @@ target 'ios-base' do
   pod 'FBSDKLoginKit', '~> 5.5.0'
   # ------
   
-  target 'ios-baseUITests' do
+  target 'MavenTestUITests' do
     inherit! :complete
     pod 'Swifter', '~> 1.4.7'
   end
